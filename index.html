@@ -1,28 +1,47 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <style>
-      #myDIV {
-        width: 600px;
-        height: 460px;
-        background:  #00ff00 url("http://thirstypeople.org/wp-content/uploads/2016/02/calm_water-1.jpg");
-      };
-        animation: mymove 5s infinite; 
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Untitled Document</title>
+    <script language="JavaScript">
+      <!--
+
+        var speed = 3000
+
+       
+        var Pic = new Array()
+
+        Pic[0] = 'img_1.jpg'
+        Pic[1] = 'img_2.jpg'
+        Pic[2] = 'img_3.jpg'
+        Pic[3] = 'img_4.jpg'
+
+        // =======================================
+        // do not edit anything below this line
+        // =======================================
+
+        var t
+        var j = 0
+        var p = Pic.length
+
+        var preLoad = new Array()
+        for (i = 0; i < p; i++){
+          preLoad[i] = new Image()
+          preLoad[i].src = Pic[i]
+        }
+
+      function runBGSlideShow(){
+        if (document.body){
+          document.body.background = Pic[j];
+          j = j + 1
+          if (j > (p-1)) j=0
+          t = setTimeout('runBGSlideShow()', speed)
+        }
       }
 
-      @-webkit-keyframes mymove {
-        from {background: "http://thirstypeople.org/wp-content/uploads/2016/02/calm_water-1.jpg";}
-        to {background-color: "http://wallpapercave.com/wp/NqS9rmD.png";}
-      }
-
-    </style>
+      //-->
+    </script>
   </head>
-  <body>
 
-
-    <div id="myDIV"></div>
-
-
+  <body onload="runBGSlideShow()">
   </body>
 </html>
-
