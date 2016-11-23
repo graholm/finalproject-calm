@@ -17,6 +17,10 @@
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.4s;
       }
+      
+      .button2:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      }
       body  {
         background-image: url("http://all4desktop.com/data_images/original/4238694-nature-background.jpg");
         background-color: #ffc7c6;
@@ -37,7 +41,9 @@
     
     <center> <button onclick="setTimeout(timerFunction, 2000);"> Start </button></center>
     
-  
+    <center>    <button class="button button2"onclick="setTimeout(timerFunction, 2000);"> Start 
+                        >Shadow on Hover</button></center>
+
 
   </body>
 </html>
