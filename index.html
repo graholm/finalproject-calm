@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      
+      .button {
+        background-color: #C07FA6; 
+        border: none;
+        color: white;
+        padding: 10px 17px;
+        text-align: center;
+        font-size: 16px;
+        margin: 3px 2px;
+        cursor: style="cursor:pointer";
+        transition-duration: 0.4s;
+      }
+      
+      .button2:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      body  {
+        background-image: url("http://all4desktop.com/data_images/original/4238694-nature-background.jpg");
+        background-color: #ffc7c6;
+      }
+      
+      <body>
+      <div id="tryagain" style="opacity: 0;">try again</div>
+      <div id="timer" style="margin-top: 3px; color: rgb(26, 48, 89);">2:00</div>
+    </body>
+    </style>
+  </head>
+  <body>
+  
+
+
+    <script>
+      function timerFunction() {
+        console.log ("Hello");
+      }
+    </script>
+    
+    <center> <h1 style="color:white;">Hey</h1> </center>
+  
+    
+    <center><button class="button button2" onclick="setTimeout(timerFunction, 2000);">Start</button></center>
+
+
+  </body>
+</html>
+
